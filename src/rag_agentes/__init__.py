@@ -1,2 +1,1 @@
-def hello() -> str:
-    return "Hello from rag-agentes!"
+"""RAG com orquestração multiagente sobre legislação brasileira."""
