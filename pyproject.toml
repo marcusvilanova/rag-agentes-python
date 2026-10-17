@@ -1,0 +1,84 @@
+[project]
+name = "rag-agentes"
+version = "0.1.0"
+description = "RAG com orquestração multiagente (LangGraph) sobre legislação brasileira, com MongoDB Atlas Vector Search, Redis, Langfuse, FastAPI e MCP."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Marcus Vinicius Vilanova Silva", email = "marcusviniciusvilanovasilva@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.143.3",
+    "google-genai>=2.31.0",
+    "langchain-core>=1.6.12",
+    "langchain-google-genai>=4.4.2",
+    "langfuse>=5.0.2",
+    "langgraph>=1.2.16",
+    "mcp>=2.3.0",
+    "pydantic-settings>=2.16.0",
+    "pymongo>=4.19.0",
+    "redis>=8.1.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.optional-dependencies]
+milvus = [
+    "pymilvus[milvus-lite]>=3.0.2",
+]
+
+[project.scripts]
+rag = "rag_agentes.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "fakeredis>=2.40.0",
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "PL", "PT", "S"]
+ignore = [
+    "PLR0913",  # construtores de composição recebem muitas dependências por design
+    "PLC0415",  # imports tardios na CLI evitam carregar SDKs que o comando não usa
+    "RUF001",   # o corpus e os prompts usam caracteres tipográficos do português
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/rag_agentes/agentes/*.py" = ["E501"]  # prompts em texto corrido
+"tests/**" = ["S101", "PLR2004", "S106"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["rag_agentes"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["pymilvus.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not integracao' --strict-markers"
+markers = [
+    "integracao: depende de MongoDB Atlas Local e Redis em execução (docker compose)",
+    "milvus: depende do Milvus Lite (extra 'milvus', apenas Linux e macOS)",
+]
+
+[tool.coverage.run]
+source = ["rag_agentes"]
+omit = ["src/rag_agentes/cli.py"]

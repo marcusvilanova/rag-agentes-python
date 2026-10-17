@@ -1,0 +1,30 @@
+{"id": "lgpd-hipoteses-tratamento", "pergunta": "Em que hipóteses o tratamento de dados pessoais é permitido?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-7"]}
+{"id": "lgpd-dado-sensivel", "pergunta": "O que a LGPD considera dado pessoal sensível?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-5"]}
+{"id": "lgpd-tratamento-sensivel", "pergunta": "Quando é permitido tratar dados pessoais sensíveis?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-11"]}
+{"id": "lgpd-criancas", "pergunta": "Como deve ser feito o tratamento de dados pessoais de crianças e adolescentes?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-14"]}
+{"id": "lgpd-direitos-titular", "pergunta": "Quais direitos o titular pode exigir do controlador sobre os seus dados?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-18"]}
+{"id": "lgpd-encarregado", "pergunta": "Quem é o encarregado pelo tratamento de dados e quais são as suas atividades?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-41"]}
+{"id": "lgpd-seguranca", "pergunta": "Que medidas de segurança os agentes de tratamento de dados devem adotar?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-46"]}
+{"id": "lgpd-incidente", "pergunta": "O controlador precisa comunicar um vazamento de dados à autoridade nacional?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-48"]}
+{"id": "lgpd-sancoes", "pergunta": "Quais sanções administrativas podem ser aplicadas a quem descumpre a LGPD?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lgpd:art-52"]}
+{"id": "marco-civil-direitos-usuario", "pergunta": "Quais direitos o Marco Civil da Internet assegura aos usuários?", "categoria": "consulta_legislacao", "fontes_esperadas": ["marco-civil:art-7"]}
+{"id": "marco-civil-neutralidade", "pergunta": "O que a lei diz sobre tratar de forma isonômica os pacotes de dados na internet?", "categoria": "consulta_legislacao", "fontes_esperadas": ["marco-civil:art-9"]}
+{"id": "marco-civil-registros-conexao", "pergunta": "Por quanto tempo devem ser guardados os registros de conexão à internet?", "categoria": "consulta_legislacao", "fontes_esperadas": ["marco-civil:art-13"]}
+{"id": "marco-civil-registros-aplicacao", "pergunta": "Por quanto tempo um provedor de aplicações deve manter os registros de acesso?", "categoria": "consulta_legislacao", "fontes_esperadas": ["marco-civil:art-15"]}
+{"id": "marco-civil-conteudo-terceiros", "pergunta": "Quando o provedor de aplicações responde por danos causados por conteúdo publicado por terceiros?", "categoria": "consulta_legislacao", "fontes_esperadas": ["marco-civil:art-19"]}
+{"id": "lai-transparencia-ativa", "pergunta": "Que informações os órgãos públicos devem divulgar mesmo sem pedido?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lai:art-8"]}
+{"id": "lai-pedido-acesso", "pergunta": "Como qualquer pessoa pode pedir acesso a informações de um órgão público?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lai:art-10"]}
+{"id": "lai-prazo-resposta", "pergunta": "Qual o prazo para o órgão público responder a um pedido de acesso à informação?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lai:art-11"]}
+{"id": "lai-classificacao-sigilo", "pergunta": "Quais são os prazos máximos de sigilo das informações classificadas como ultrassecretas, secretas e reservadas?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lai:art-24"]}
+{"id": "lai-informacoes-pessoais", "pergunta": "Como a Lei de Acesso à Informação trata as informações pessoais?", "categoria": "consulta_legislacao", "fontes_esperadas": ["lai:art-31"]}
+{"id": "ldb-dever-estado", "pergunta": "Como se efetiva o dever do Estado com a educação escolar pública?", "categoria": "consulta_legislacao", "fontes_esperadas": ["ldb:art-4"]}
+{"id": "ldb-carga-horaria", "pergunta": "Qual é a carga horária mínima anual do ensino fundamental e do ensino médio?", "categoria": "consulta_legislacao", "fontes_esperadas": ["ldb:art-24"]}
+{"id": "ldb-educacao-profissional", "pergunta": "Como a LDB define a educação profissional e tecnológica?", "categoria": "consulta_legislacao", "fontes_esperadas": ["ldb:art-39"]}
+{"id": "ldb-tecnico-nivel-medio", "pergunta": "Em quais formas pode ser oferecida a educação profissional técnica de nível médio?", "categoria": "consulta_legislacao", "fontes_esperadas": ["ldb:art-36-B"]}
+{"id": "ldb-cursos-especiais", "pergunta": "As instituições de educação profissional podem oferecer cursos abertos à comunidade?", "categoria": "consulta_legislacao", "fontes_esperadas": ["ldb:art-42"]}
+{"id": "senac-criacao", "pergunta": "A quem foi atribuído o encargo de organizar as escolas de aprendizagem comercial?", "categoria": "consulta_legislacao", "fontes_esperadas": ["senac:art-1"]}
+{"id": "senac-contribuicao", "pergunta": "Qual contribuição os estabelecimentos comerciais pagam para custear o Senac?", "categoria": "consulta_legislacao", "fontes_esperadas": ["senac:art-4"]}
+{"id": "senac-isencao-impostos", "pergunta": "Os serviços educativos do Senac pagam impostos?", "categoria": "consulta_legislacao", "fontes_esperadas": ["senac:art-7"]}
+{"id": "fora-geografia", "pergunta": "Qual é a capital da Austrália?", "categoria": "fora_do_escopo", "fontes_esperadas": []}
+{"id": "fora-programacao", "pergunta": "Escreva uma função em Python que ordena uma lista de números.", "categoria": "fora_do_escopo", "fontes_esperadas": []}
+{"id": "fora-culinaria", "pergunta": "Qual é a melhor receita de bolo de cenoura?", "categoria": "fora_do_escopo", "fontes_esperadas": []}

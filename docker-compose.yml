@@ -1,0 +1,51 @@
+# Ambiente local completo: MongoDB com Atlas Vector Search, Redis e a API.
+#
+#   cp .env.example .env        # preencher GOOGLE_API_KEY (e, se quiser, as chaves do Langfuse)
+#   docker compose up -d --build
+#   docker compose exec api rag ingerir
+#
+# API em http://localhost:8000/docs
+
+services:
+  mongodb:
+    # Mesma engine de busca do Atlas (mongot), rodando localmente.
+    image: mongodb/mongodb-atlas-local:8.0
+    ports:
+      # Só em 127.0.0.1: MongoDB e Redis locais não têm autenticação.
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongodb-dados:/data/db
+      - mongodb-config:/data/configdb
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/runner", "healthcheck"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    env_file: .env
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/?directConnection=true
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  mongodb-dados:
+  mongodb-config:

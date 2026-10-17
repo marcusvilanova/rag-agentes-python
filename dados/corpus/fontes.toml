@@ -1,0 +1,31 @@
+# Fontes do corpus. Todas são atos oficiais publicados pela Presidência da
+# República; pelo art. 8º, IV, da Lei nº 9.610/1998, textos de leis e decretos
+# não são objeto de proteção como direitos autorais.
+#
+# Os arquivos .txt desta pasta são gerados por `rag corpus` a partir destas URLs
+# (texto compilado, sem os trechos revogados). Data da coleta: 2026-10-17.
+
+[[fonte]]
+id = "lgpd"
+titulo = "Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais)"
+url = "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+
+[[fonte]]
+id = "marco-civil"
+titulo = "Lei nº 12.965/2014 (Marco Civil da Internet)"
+url = "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm"
+
+[[fonte]]
+id = "lai"
+titulo = "Lei nº 12.527/2011 (Lei de Acesso à Informação)"
+url = "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm"
+
+[[fonte]]
+id = "ldb"
+titulo = "Lei nº 9.394/1996 (Lei de Diretrizes e Bases da Educação Nacional)"
+url = "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+
+[[fonte]]
+id = "senac"
+titulo = "Decreto-Lei nº 8.621/1946 (criação do Senac)"
+url = "https://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/del8621.htm"
